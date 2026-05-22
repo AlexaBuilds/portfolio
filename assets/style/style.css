@@ -55,3 +55,39 @@ header {
     z-index: 100;
     background: var(--lighting-color);
 }
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+/*Lista del menú*/
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    font-size: 1.8rem;
+    /*Linea invisible inicialemente*/
+    border-bottom: 0.3rem transparent solid;
+    /*Transición suave*/
+    transition: 0.3s ease-in-out;
+}
+
+nav li:hover {
+    /*Línea amarilla al pasar el mouse*/
+    border-bottom: 0.3rem var(--secondary-color) solid;
+}
+
+
+
+
+
+
+
+
+
