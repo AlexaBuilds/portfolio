@@ -83,11 +83,102 @@ nav li:hover {
     border-bottom: 0.3rem var(--secondary-color) solid;
 }
 
+.logo {
+    /*Tamaño grande*/
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+/*HERO SECTION*/
 
+#hero {
+    background: var(--dark-color);
+    /*Altura mínima pantalla completa*/
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--lighting-color);
+}
 
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
 
+/*Contenedor de la imagen*/
+.hero_image {
+    /*Ocupa mismo espacio flexible*/
+    flex: 1;
+}
 
+.hero_image img {
+    /*Responsive*/
+    width: 100%;
+    max-width: 450px;
+    /*Border redondeados*/
+    border-radius: 1rem;
+    display: block;
+    /*Proporción cuadrada*/
+    aspect-ratio: 1/1;
+    /*Recorte elegante*/
+    object-fit: cover;
+}
 
+/*Contenido texto*/
+.hero_content {
+    flex: 1;
+}
 
+#hero h1 {
+    font-size: 4rem;
+}
+/*texto HI*/
+.hi_text {
+    color: var(--secondary-color);
+    font-size: 6rem;
+    font-weight: bold;
+}
 
+.name_text {
+    font-size: 5rem;
+    font-weight: bold;
+}
 
+/*Subtítulo animado*/
+#hero h2 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    /*Oculta el texto sobrante*/
+    overflow: hidden;
+    /*Evita salto línea*/
+    white-space: nowrap;
+    /*Cursor typing*/
+    border-right: 3px solid orange;
+    /*Empieza invisible*/
+    width: 0;
+    /*Animaciones*/
+    animation: 
+        typing 4s steps(30, end) forwards,
+        blink 0.8s infinite;
+}
+
+/*ANIMATION TYPING*/
+
+@keyframes typing {
+    from {
+        /*Empieza oculto*/
+        width: 0;
+    }
+    to {
+        /*termina visible*/
+        width: 100%;
+    }
+}
+
+/*Cursor parpadeante*/
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
