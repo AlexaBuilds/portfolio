@@ -1,3 +1,57 @@
+:root {
+    --lighting-color: #0089b7;
+    --dark-color: #003d62;
+    --darked-color: #003251;
+    --secondary-color: #fff700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* 62.5% = 10px
+    FACILITA TRABAJAR CON REM
+    1 rem = 10px
+    2 rem = 20px
+*/
+
+html {
+    font-size: 62.5%;
+}
+/*CONFIGURAR BODY HTML*/
+body, html {
+    /*Scroll suave*/
+    scroll-behavior: smooth;
+    color: white;
+    /*Espaciado vertical entre lineas*/
+    line-height: 1.4;
+}
+/*Tamaño base del texto*/
 body {
-    font-family: "Tangerine", sans-serif;
+    font-size: 1.6rem;
+}
+/*CONTAINER*/
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+/*LINKS*/
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+header {
+    /*Header pegajoso*/
+    position: sticky;
+    top: 0;
+    /*Prioridad sobre otros elementos*/
+    z-index: 100;
+    background: var(--lighting-color);
 }
