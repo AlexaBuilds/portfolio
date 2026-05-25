@@ -289,3 +289,54 @@ footer {
     padding: 2rem;
     font-size: 1.6rem;
 }
+
+/*RESPONSIVE*/
+
+/* Ajustes para pantallas ≤500px */
+@media (max-width: 500px) {
+  html {
+    font-size: 25%;            /* Base rem aún más pequeña */
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 50vh;              /* Ajusta altura a 50% del viewport */
+  }
+  .card img {
+    height: 220px;             /* Altura más razonable en móvil */
+  }
+}
+
+/* Ajustes para pantallas ≤900px */
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;            /* Reduce base rem a 40% */
+  }
+  #hero .container {
+    flex-direction: column;    /* Pila imagen y texto vertical */
+  }
+  .hero_image {
+    display: grid;             /* Grid para centrar imagen */
+    place-items: center;
+  }
+  #contact .container {
+    height: 70vh;              /* Ajusta altura a 70% del viewport */
+  }
+  .card img {
+    height: 300px;             /* Reduce altura de miniaturas */
+  }
+}
+
+/* Ajustes para pantallas ≥1000px */
+@media (min-width: 1000px) {
+  .top_contact {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                               /* Columnas fluidas de mínimo 150px */
+    gap: 2rem;                 /* Espacio entre columnas */
+  }
+}
