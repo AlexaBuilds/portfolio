@@ -46,7 +46,7 @@
           <div class="hero_content">
             <h1>
               <span class="hi_text">Hi</span> , I am
-              <span class="name_text">Alexa Marques</span>
+              <span class="name_text">Jorge Oscanoa</span>
             </h1>
             <h2>Full Stack Web Developer</h2>
           </div>
@@ -100,7 +100,7 @@
           <div class="top_contact">
             <a
               class="contact_way"
-              href="https://www.linkedin.com/in/alexa-m-m/"
+              href="https://www.linkedin.com/in/joscanoav/"
               target="_blank"
             >
               <i class="fab fa-linkedin"></i>
@@ -109,7 +109,7 @@
           
             <a
               class="contact_way"
-              href="https://github.com/AlexaBuilds"
+              href="https://github.com/joscanoav"
               target="_blank"
             >
               <i class="fab fa-github"></i>
@@ -118,14 +118,14 @@
 
             <a
               class="contact_way"
-              href="mailto:alexamarques@erpcrm-marketing.com"
+              href="mailto:joscanoav@gmail.com"
               target="_blank"
             >
               <i class="fas fa-envelope"></i>
               <h3>Email</h3>
             </a>
 
-            <a class="contact_way" href="tel:+34635285176" target="_blank">
+            <a class="contact_way" href="tel:+34653693676" target="_blank">
               <i class="fas fa-mobile-alt"></i>
               <h3>Mobile</h3>
             </a>
@@ -135,7 +135,7 @@
       </section>
     </main>
     <footer>
-      <div class="container">&copy; 2026 AMM - Full Stack Web Developer</div>
+      <div class="container">&copy; 2026 JOV - Full Stack Web Developer</div>
     </footer>
   </body>
 </html>
