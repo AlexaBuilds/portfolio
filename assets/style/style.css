@@ -340,3 +340,57 @@ footer {
     gap: 2rem;                 /* Espacio entre columnas */
   }
 }
+
+/* ESTILOS EXTRA PARA DESTACAR PYTHON Y BACKEND */
+
+/* Forzar 4 columnas si hay espacio, o adaptarse */
+.project_container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Tarjeta destacada de Odoo/Python */
+.featured_project .card {
+    border: 2px solid var(--lighting-color);
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 137, 183, 0.2);
+}
+
+/* Etiqueta flotante de Python */
+.tech_badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #003d62;
+    color: #fff700;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    z-index: 10;
+    border: 1px solid var(--lighting-color);
+}
+
+.backend_card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.backend_card p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.view_repo_btn {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--lighting-color);
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover .view_repo_btn {
+    color: var(--dark-color);
+    transform: translateX(5px);
+}

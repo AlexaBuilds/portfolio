@@ -4,35 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap" rel="stylesheet" />
+    <title>Alexa Marques | Odoo Enterprise & Backend Developer</title>
   </head>
 
   <body>
     <header>
       <nav class="container">
-        <div class="logo">Portfolio</div>
+        <div class="logo">Alexa Marques</div>
         <ul>
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#project">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -41,29 +26,31 @@
       <section id="hero">
         <div class="container">
           <div class="hero_image animate__animated animate__bounceInLeft">
-            <img src="assets/images/foto.png" alt="hero image" />
+            <img src="assets/images/foto.png" alt="Alexa Marques" />
           </div>
           <div class="hero_content">
             <h1>
-              <span class="hi_text">Hi</span> , I am
+              <span class="hi_text">Hi</span>, I am
               <span class="name_text">Alexa Marques</span>
             </h1>
-            <h2>Full Stack Web Developer</h2>
+            <h2>Odoo Enterprise & Backend Developer</h2>
           </div>
         </div>
       </section>
 
       <section id="project">
+        <h2>My Projects</h2>
         <div class="project_container">
-          <div class="grid_item">
+          
+          <div class="grid_item featured_project">
             <div class="card">
-              <img
-                src="assets/images/01landingPage.png"
-                alt="01 Landing Page"
-              />
-              <a href="assets/projects/01landingPage/index.html">
-                <div class="card_content">
-                  <h3>Landing Page</h3>
+              <div class="tech_badge"><i class="fab fa-python"></i> Python & Odoo</div>
+              <img src="assets/images/odoo-omnichannel.png" alt="Odoo Omnichannel Connector" />
+              <a href="https://github.com/AlexaBuilds/odoo-portfolio" target="_blank">
+                <div class="card_content backend_card">
+                  <h3>Omnichannel Connector (Odoo 18 Enterprise)</h3>
+                  <p>Advanced API Integration (BigBuy & TEMU), AWS & Docker setup.</p>
+                  <span class="view_repo_btn">View Tech Specs <i class="fas fa-arrow-right"></i></span>
                 </div>
               </a>
             </div>
@@ -71,7 +58,7 @@
 
           <div class="grid_item">
             <div class="card">
-              <img src="assets/images/02SassIA.png" alt="01 Landing Page" />
+              <img src="assets/images/02SassIA.png" alt="SaaS IA" />
               <a href="assets/projects/02saas-ia/index.html">
                 <div class="card_content">
                   <h3>SaaS IA</h3>
@@ -82,7 +69,18 @@
 
           <div class="grid_item">
             <div class="card">
-              <img src="assets/images/03challenge.png" alt="01 Landing Page" />
+              <img src="assets/images/01landingPage.png" alt="Landing Page" />
+              <a href="assets/projects/01landingPage/index.html">
+                <div class="card_content">
+                  <h3>Landing Page</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid_item">
+            <div class="card">
+              <img src="assets/images/03challenge.png" alt="Art Gallery" />
               <a href="assets/projects/03challenge/index.html">
                 <div class="card_content">
                   <h3>Art Gallery</h3>
@@ -90,52 +88,37 @@
               </a>
             </div>
           </div>
+
         </div>
       </section>
 
       <section id="contact">
         <div class="container">
           <h2>Let's work together...</h2>
-
           <div class="top_contact">
-            <a
-              class="contact_way"
-              href="https://www.linkedin.com/in/alexa-m-m/"
-              target="_blank"
-            >
+            <a class="contact_way" href="https://www.linkedin.com/in/alexa-m-m/" target="_blank">
               <i class="fab fa-linkedin"></i>
               <h3>LinkedIn</h3>
             </a>
-          
-            <a
-              class="contact_way"
-              href="https://github.com/AlexaBuilds"
-              target="_blank"
-            >
+            <a class="contact_way" href="https://github.com/AlexaBuilds" target="_blank">
               <i class="fab fa-github"></i>
               <h3>GitHub</h3>
             </a>
-
-            <a
-              class="contact_way"
-              href="mailto:alexamarques@erpcrm-marketing.com"
-              target="_blank"
-            >
+            <a class="contact_way" href="mailto:alexamarques@erpcrm-marketing.com" target="_blank">
               <i class="fas fa-envelope"></i>
               <h3>Email</h3>
             </a>
-
             <a class="contact_way" href="tel:+34635285176" target="_blank">
               <i class="fas fa-mobile-alt"></i>
               <h3>Mobile</h3>
             </a>
           </div>
         </div>
-        </div>
       </section>
     </main>
+
     <footer>
-      <div class="container">&copy; 2026 AMM - Full Stack Web Developer</div>
+      <div class="container">&copy; 2026 AMM - Odoo Enterprise & Backend Developer</div>
     </footer>
   </body>
 </html>
