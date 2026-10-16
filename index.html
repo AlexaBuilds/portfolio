@@ -240,74 +240,146 @@
         </div>
       </section>
 
-      <!-- SECCIÓN DE PROYECTOS -->
+      <!-- SECCIÓN DE PROYECTOS DESTACADOS -->
       <section id="project">
         <div class="container">
           <h2>Mis Proyectos Destacados</h2>
-          <div class="project_container">
-            
-            <!-- Proyecto 1: Backend Odoo -->
-            <div class="grid_item">
-              <div class="card">
-                <div class="tech_badge"><i class="fab fa-python"></i> Python & Odoo 18</div>
-                <img src="assets/images/apps_odoo_omnichannel_connector.png" alt="Odoo Omnichannel Connector" />
-                <div class="card_content">
-                  <h3>Omnichannel Connector (Odoo 18 Enterprise)</h3>
-                  <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Integración API masiva (+30k productos), automatización de marketplaces y despliegue securizado en AWS/Docker.</p>
-                  <button class="view_modal_btn" onclick="openModal('modal-odoo')">Ficha Técnica <i class="fas fa-file-alt"></i></button>
+          
+          <!-- Proyecto 1: Featured Card con Imagen Superior Panorámica -->
+          <div class="project_card_featured">
+            <div class="project_featured_img_full">
+              <div class="tech_badge"><i class="fab fa-python"></i> Python & Odoo 18</div>
+              <img src="assets/images/apps_odoo_omnichannel_connector.png" alt="Odoo Omnichannel Connector" />
+            </div>
+            <div class="project_featured_content_bottom">
+              <div>
+                <h3 class="project_title">Omnichannel Connector (Odoo 18 Enterprise)</h3>
+                <p class="project_description">
+                  Integración API masiva sincronizada en tiempo real con +30,000 productos. Automatización de marketplaces (TEMU Seller API & BigBuy API) y despliegue securizado containerizado en AWS EC2 con Docker.
+                </p>
+              </div>
+              <div>
+                <div class="module_pills" style="margin-bottom: 1.8rem;">
+                  <span class="module_pill"><strong>Core:</strong> Python 3.11</span>
+                  <span class="module_pill"><strong>ORM:</strong> Odoo 18 / PostgreSQL</span>
+                  <span class="module_pill"><strong>Cloud:</strong> AWS EC2 / Docker Compose</span>
                 </div>
+                <button class="view_modal_btn" onclick="openModal('modal-odoo')">Ver Ficha Técnica <i class="fas fa-file-alt"></i></button>
               </div>
             </div>
+          </div>
 
-            <!-- Proyecto 2: Redsys + AWS S3/CloudFront Signed URLs -->
-            <div class="grid_item">
-              <div class="card">
+          <!-- Grid 2x2 para los otros 4 Proyectos -->
+          <div class="project_featured_grid">
+            
+            <!-- Proyecto 2: Membership Hub + Redsys -->
+            <div class="project_card">
+              <div class="project_img_wrapper">
                 <div class="tech_badge"><i class="fas fa-lock"></i> Private Client / NDA</div>
                 <img src="assets/images/imagen_portfolio_privado.jpg" alt="Redsys & AWS Media Protection" />
-                <div class="card_content">
-                  <h3>Redsys + AWS S3/CloudFront Signed URLs</h3>
-                  <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Membership Hub privado: Pasarela Redsys HMAC, Paywall de suscripción y streaming seguro de vídeo/imagen vía AWS CloudFront/S3.</p>
-                  <button class="view_modal_btn" onclick="openModal('modal-membership')">Ficha Técnica <i class="fas fa-file-alt"></i></button>
+              </div>
+              <div class="project_card_body">
+                <div>
+                  <h3 class="project_title">Redsys + AWS S3/CloudFront Signed URLs</h3>
+                  <p class="project_description">
+                    Membership Hub de acceso restringido con pasarela de pagos Redsys HMAC SHA-256, Paywall por roles (RBAC) y distribución de streaming multimedia privado mediante Signed URLs en CloudFront.
+                  </p>
+                </div>
+                <div>
+                  <div class="module_pills" style="margin-bottom: 1.8rem;">
+                    <span class="module_pill"><strong>Pasarela:</strong> Redsys HMAC API</span>
+                    <span class="module_pill"><strong>Security:</strong> AWS CloudFront Signed URLs</span>
+                    <span class="module_pill"><strong>Frontend:</strong> Hardening & DRM</span>
+                  </div>
+                  <button class="view_modal_btn" onclick="openModal('modal-membership')">Ver Ficha Técnica <i class="fas fa-file-alt"></i></button>
                 </div>
               </div>
             </div>
 
             <!-- Proyecto 3: Angular SSR Storefront -->
-            <div class="grid_item">
-              <div class="card">
+            <div class="project_card">
+              <div class="project_img_wrapper">
+                <div class="tech_badge" style="background: var(--color-ez-blue);"><i class="fab fa-angular"></i> Angular SSR</div>
                 <img src="assets/images/ez-findgoods-shop.png" alt="EZ FindGoods Storefront" />
-                <a href="https://www.ez-findgoods.com/shop/" target="_blank">
-                  <div class="card_content">
-                    <h3>Angular SSR Storefront <i class="fas fa-external-link-alt" style="font-size: 1.2rem; color: var(--color-ez-blue);"></i></h3>
-                    <p style="font-size: 1.3rem; color: var(--text-secondary);">Tienda e-commerce optimizada con Server-Side Rendering para máximo rendimiento SEO.</p>
+              </div>
+              <div class="project_card_body">
+                <div>
+                  <h3 class="project_title">
+                    Angular SSR Storefront 
+                    <a href="https://www.ez-findgoods.com/shop/" target="_blank" title="Visitar tienda online">
+                      <i class="fas fa-external-link-alt" style="font-size: 1.5rem; color: var(--color-ez-blue);"></i>
+                    </a>
+                  </h3>
+                  <p class="project_description">
+                    Plataforma e-commerce e-Storefront optimizada con renderizado Server-Side Rendering (SSR) para maximizar la velocidad de carga, la indexación SEO y la experiencia de usuario.
+                  </p>
+                </div>
+                <div>
+                  <div class="module_pills" style="margin-bottom: 1.8rem;">
+                    <span class="module_pill"><strong>Framework:</strong> Angular SSR</span>
+                    <span class="module_pill"><strong>E-Commerce:</strong> Universal Rendering</span>
+                    <span class="module_pill"><strong>Performance:</strong> Core Web Vitals 95+</span>
                   </div>
-                </a>
+                  <a href="https://www.ez-findgoods.com/shop/" target="_blank" class="view_modal_btn" style="text-decoration:none;">Visitar Tienda <i class="fas fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
 
-            <!-- Proyecto 4: SaaS IA -->
-            <div class="grid_item">
-              <div class="card">
-                <img src="assets/images/mi-saas-react_capturapantalla.png" alt="SaaS IA" />
-                <a href="https://alexabuilds.github.io/mi-saas-react/" target="_blank">
-                  <div class="card_content">
-                    <h3>SaaS IA (React) <i class="fas fa-external-link-alt" style="font-size: 1.2rem; color: var(--color-ez-blue);"></i></h3>
-                    <p style="font-size: 1.3rem; color: var(--text-secondary);">Panel de control interactivo consumiendo e integrando APIs de Inteligencia Artificial.</p>
+            <!-- Proyecto 4: SaaS IA Platform -->
+            <div class="project_card">
+              <div class="project_img_wrapper">
+                <div class="tech_badge" style="background: var(--color-ez-blue);"><i class="fab fa-react"></i> React & AI APIs</div>
+                <img src="assets/images/mi-saas-react_capturapantalla.png" alt="SaaS IA React" />
+              </div>
+              <div class="project_card_body">
+                <div>
+                  <h3 class="project_title">
+                    SaaS IA (React Platform)
+                    <a href="https://alexabuilds.github.io/mi-saas-react/" target="_blank" title="Ver Demo en Vivo">
+                      <i class="fas fa-external-link-alt" style="font-size: 1.5rem; color: var(--color-ez-blue);"></i>
+                    </a>
+                  </h3>
+                  <p class="project_description">
+                    Panel de control e interfaz SaaS interactiva construida en React para la integración, consumo y orquestación de modelos y APIs de Inteligencia Artificial en flujos de trabajo empresariales.
+                  </p>
+                </div>
+                <div>
+                  <div class="module_pills" style="margin-bottom: 1.8rem;">
+                    <span class="module_pill"><strong>Frontend:</strong> React ES6+</span>
+                    <span class="module_pill"><strong>Integración:</strong> OpenAI / AI REST APIs</span>
+                    <span class="module_pill"><strong>UI/UX:</strong> Dashboard Componentes</span>
                   </div>
-                </a>
+                  <a href="https://alexabuilds.github.io/mi-saas-react/" target="_blank" class="view_modal_btn" style="text-decoration:none;">Ver Demo Live <i class="fas fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
 
             <!-- Proyecto 5: E-Commerce Landing UI -->
-            <div class="grid_item">
-              <div class="card">
+            <div class="project_card">
+              <div class="project_img_wrapper">
+                <div class="tech_badge" style="background: var(--color-ez-blue);"><i class="fas fa-shopping-cart"></i> UI/UX Conversion</div>
                 <img src="assets/images/simulacro-ezfind.png" alt="E-Commerce Landing UI" />
-                <a href="https://alexabuilds.github.io/simulacro-ezfind/" target="_blank">
-                  <div class="card_content">
-                    <h3>E-Commerce Landing UI <i class="fas fa-external-link-alt" style="font-size: 1.2rem; color: var(--color-ez-blue);"></i></h3>
-                    <p style="font-size: 1.3rem; color: var(--text-secondary);">Landing page de alta conversión optimizada para dispositivos móviles.</p>
+              </div>
+              <div class="project_card_body">
+                <div>
+                  <h3 class="project_title">
+                    E-Commerce Landing UI
+                    <a href="https://alexabuilds.github.io/simulacro-ezfind/" target="_blank" title="Ver Demo en Vivo">
+                      <i class="fas fa-external-link-alt" style="font-size: 1.5rem; color: var(--color-ez-blue);"></i>
+                    </a>
+                  </h3>
+                  <p class="project_description">
+                    Landing page orientada a la alta conversión en comercio electrónico, maquetada con arquitectura Mobile-First, llamadas a la acción estratégicas y optimización visual.
+                  </p>
+                </div>
+                <div>
+                  <div class="module_pills" style="margin-bottom: 1.8rem;">
+                    <span class="module_pill"><strong>Design:</strong> Mobile-First Layout</span>
+                    <span class="module_pill"><strong>CRO:</strong> Funnel de Conversión</span>
+                    <span class="module_pill"><strong>Frontend:</strong> HTML5 & CSS3 Pure</span>
                   </div>
-                </a>
+                  <a href="https://alexabuilds.github.io/simulacro-ezfind/" target="_blank" class="view_modal_btn" style="text-decoration:none;">Ver Proyecto <i class="fas fa-arrow-right"></i></a>
+                </div>
               </div>
             </div>
 
