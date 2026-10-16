@@ -660,6 +660,13 @@ footer {
     color: var(--color-ez-blue);
 }
 
+/* ALINEACIÓN JUSTIFICADA EN EL CONTENIDO DEL MODAL */
+.modal-body p,
+.modal-body ul li,
+.nda-warning {
+    text-align: justify;
+}
+
 /* SECCIÓN FORMACIÓN ACADÉMICA Y CERTIFICACIONES */
 #education {
     padding: 8rem 2rem;
