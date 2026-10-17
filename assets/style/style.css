@@ -372,7 +372,7 @@ nav li a:hover {
     gap: 1rem;
 }
 
-/* BADGES DE HABILIDADES CON TOOLTIP INTERACTIVO */
+/* BADGES DE HABILIDADES CON MARCO Y TOOLTIP INTEGRADO AL DESIGN SYSTEM */
 .skill_badges span {
     background: var(--bg-white);
     padding: 0.8rem 1.4rem;
@@ -387,35 +387,43 @@ nav li a:hover {
     box-shadow: var(--shadow-sm);
     position: relative;
     cursor: help;
-    transition: all 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* AL PASAR EL CURSOR: MARCO CON DEGRADADO AZUL-NARANJA */
 .skill_badges span:hover {
-    border-color: var(--color-ez-orange);
+    border: 1px solid transparent;
+    background: linear-gradient(var(--bg-white), var(--bg-white)) padding-box,
+                linear-gradient(135deg, var(--color-ez-blue) 0%, var(--color-ez-orange) 100%) border-box;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(253, 96, 29, 0.15);
+    box-shadow: 0 6px 18px rgba(41, 187, 227, 0.2);
 }
 
-/* GLOBITO TOOLTIP FLOTANTE (CSS PURO) */
+/* GLOBITO TOOLTIP FLOTANTE (ESTILO FROSTED GLASS CON BORDE DEGRADADO) */
 .skill_badges span[data-tooltip]::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 125%;
+    bottom: 130%;
     left: 50%;
-    transform: translateX(-50%) translateY(5px);
-    background: var(--text-primary);
-    color: #ffffff;
-    padding: 0.8rem 1.2rem;
-    border-radius: 0.8rem;
-    font-size: 1.15rem;
-    font-weight: 400;
+    transform: translateX(-50%) translateY(6px);
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    color: var(--text-primary);
+    padding: 0.9rem 1.3rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     white-space: normal;
     width: max-content;
-    max-width: 220px;
+    max-width: 230px;
     text-align: center;
-    line-height: 1.4;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
-    border: 1px solid var(--color-ez-blue);
+    line-height: 1.45;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+    border: 1.5px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96)),
+                      linear-gradient(135deg, var(--color-ez-blue) 0%, var(--color-ez-orange) 100%);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -423,16 +431,16 @@ nav li a:hover {
     z-index: 100;
 }
 
-/* FLECHITA INFERIOR DEL TOOLTIP */
+/* FLECHITA INFERIOR CON COLOR COHERENTE */
 .skill_badges span[data-tooltip]::before {
     content: "";
     position: absolute;
-    bottom: 105%;
+    bottom: 110%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
-    border-color: var(--text-primary) transparent transparent transparent;
+    border-color: var(--color-ez-blue) transparent transparent transparent;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
